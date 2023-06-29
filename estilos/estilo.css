@@ -6,7 +6,120 @@
 }
 
 /*Layout*/
+html, body, #home{
+    height: 100%;
+}
+
 body{
     background: url(../imagens/capa.png), url(../imagens/ruido.png), linear-gradient(50deg,rgb(255, 66, 107), rgb(124, 38, 248)); /*uma img sobreposta a outra*/
     background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+/*Barra de navegação*/
+.navbar-transparente{
+    padding: 15px 0px;
+    background: rgba(0,0,0,0.6); /*cor com opacidade*/
+}
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: rgb(155, 240, 225);
+}
+
+.navbar-light .navbar-toggler{ /*cor da borda do icone humburguer*/
+    color: rgba(255,255,255,0.5);
+    border-color: rgba(255,255,255,0.5);
+}
+
+.divisor{
+    width: 1px;
+    background: white;
+    margin: 12px 15px;
+}
+
+/*Capa*/
+.capa{
+    text-align: center;
+}
+
+.btn-custom{
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+    
+}
+.btn-custom:focus{ /*remover borda ao clicar*/
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.btn-roxo{
+    background: #7c25f8;
+}
+
+.btn-roxo:hover{
+    background: #6207e3;
+    color: white;
+}
+
+.btn-branco{
+    border: 2px solid white;
+}
+
+.btn-branco:hover{
+    background-color: white;
+    color: black;
+}
+
+/*Tipografia*/
+h1{
+    font-weight: 900;
+    letter-spacing: -0.05em;/*controlar o espaçamento entre as letras*/
+    margin-bottom: 50px;
+    color: white;
+}
+
+/* Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
+@media (max-width: 575.98px) { 
+    .btn-custom{
+        margin: 10px 15px;
+    }
+ }
+
+/* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    h1{
+        font-size: 3em;
+    }
+    .btn-custom{
+        margin: 10px 15px;
+    }
+ }
+
+/* Dispositivos médios (tablets com 768px ou mais)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    h1{
+        font-size: 4em;
+    }
+ }
+
+/* Dispositivos large (desktops com 992px ou mais)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    h1{
+        font-size: 5em;
+    }
+ }
+
+/* Dispositivos extra large (desktops grandes com 1200px ou mais)*/
+@media (min-width: 1200px) { 
+    h1{
+        font-size: 6em;
+    }
+ }
