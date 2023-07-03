@@ -8,6 +8,7 @@
 /*Layout*/
 html, body, #home{
     height: 100%;
+    overflow-x: hidden; /*o hidden esconde  a barra de rolagem no eixo x*/
 }
 
 body{
@@ -78,12 +79,63 @@ body{
     color: black;
 }
 
-/*Tipografia*/
+/*Estrutura de conteúdos
+------------------------------*/
+.caixa{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#servicos{
+    background: white;   
+}
+
+#servicos h2, h3{
+    color: rgb(124, 37, 248);
+}
+
+#recursos{
+    color: white;
+}
+
+#recursos h2{
+    color: white;
+}
+
+#recursos h3{
+    color: rgb(155, 240, 225);
+}
+
+.albuns{
+    padding: 10px 0px;
+}
+
+.rotacionar{
+    -ms-transform: rotate(30deg);/*IE 9*/
+    -webkit-transform: rotate(30deg);/*chrome, safari, opera*/
+    transform: rotate(30deg); /*para rotacionar as imagens que estao em bloco*/
+    padding-left: 80px;
+}
+
+/*Tipografia
+--------------------------*/
 h1{
     font-weight: 900;
     letter-spacing: -0.05em;/*controlar o espaçamento entre as letras*/
     margin-bottom: 50px;
     color: white;
+}
+
+h2{
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
 }
 
 /* Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
