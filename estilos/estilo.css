@@ -117,6 +117,39 @@ body{
     padding-left: 80px;
 }
 
+/*Footer
+--------------------------*/
+footer{
+    background: black;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+
+footer h4{
+    color: rgb(145, 148, 150);
+    font-size: 0.8em;
+    text-decoration: uppercase;
+}
+
+footer .navbar-nav a{
+    color: white;
+    font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover{
+    color: rgb(155, 240, 225);
+    text-decoration: none;
+}
+
+footer ul{
+    list-style: none; /*tira a marcação*/
+}
+
+footer ul li{
+    float: right;
+    margin: 0px 5px;
+}
+
 /*Tipografia
 --------------------------*/
 h1{
@@ -142,6 +175,7 @@ h3{
 @media (max-width: 575.98px) { 
     .btn-custom{
         margin: 10px 15px;
+        font-size: 1em;
     }
  }
 
